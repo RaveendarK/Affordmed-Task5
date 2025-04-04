@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="weather-card">
+      <div class="weather-icon">
+        <i id="icon" class="fas fa-sun"></i>
+      </div>
+      <h2 id="city-name">City Name</h2>
+      <div id="temperature">--°C</div>
+      <div class="details">
+        <div class="detail">
+          <i class="fas fa-tint"></i>
+          <span id="humidity">--%</span>
+        </div>
+        <div class="detail">
+          <i class="fas fa-wind"></i>
+          <span id="wind">-- km/h</span>
+        </div>
+      </div>
+      <div id="weather-desc">--</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
